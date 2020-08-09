@@ -1,0 +1,111 @@
+2020-08-09 12:28:40,709 ERROR: Exception on /favicon.ico [GET] [in /home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/app/errors.py", line 7, in not_found_error
+    return render_template('404.html'), 404
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/app/templates/404.html", line 1, in template
+    {% extend "base.html" %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'extend'.
+2020-08-09 12:29:01,694 ERROR: Exception on /favicon.ico [GET] [in /home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/app/errors.py", line 7, in not_found_error
+    return render_template('404.html'), 404
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/app/templates/404.html", line 1, in template
+    {% extend "base.html" %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'extend'.
+2020-08-09 12:29:12,978 ERROR: Exception on /login [POST] [in /home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aditya/GitLab/flask-tutorial-aditya/app/routes.py", line 39, in login
+    if not next or url_parse(next_page).netloc != '':
+  File "/home/aditya/GitLab/flask-tutorial-aditya/.flaskenv/lib/python3.8/site-packages/werkzeug/urls.py", line 457, in url_parse
+    i = url.find(s(":"))
+AttributeError: 'NoneType' object has no attribute 'find'
